@@ -1,0 +1,11 @@
+# Ignorar a pasta 'data' onde os jogos PGN são salvos
+/data/
+
+# Ignorar o arquivo .env contendo as variáveis de ambiente
+.env
+
+# Ignorar a pasta do ambiente virtual 'venv'
+venv/
+
+# Ignorar qualquer arquivo CSV
+*.csv

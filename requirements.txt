@@ -1,0 +1,9 @@
+#Bibliotecas nescessarias
+requests
+python-dotenv
+chess
+pandas
+matplotlib
+seaborn
+numpy
+berserk
