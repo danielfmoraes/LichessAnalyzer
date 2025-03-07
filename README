@@ -14,7 +14,7 @@ O **LichessAnalyzer** é um conjunto de scripts Python que permite importar, ana
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seuusuario/LichessAnalyzer.git
+   git clone https://github.com/danielfmoraes/LichessAnalyzer.git
    cd LichessAnalyzer
 
 2. Crie e ative um ambiente virtual:
