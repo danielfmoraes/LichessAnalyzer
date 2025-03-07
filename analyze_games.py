@@ -2,7 +2,7 @@ import chess.pgn
 import pandas as pd
 
 # Caminho do arquivo PGN
-PGN_FILE = "data/games.pgn"
+PGN_FILE = "data/partidas.pgn"
 
 # Lista para armazenar os dados das partidas
 game_data = []
