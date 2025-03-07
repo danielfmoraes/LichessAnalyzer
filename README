@@ -1,0 +1,90 @@
+# LichessAnalyzer
+
+O **LichessAnalyzer** é um conjunto de scripts Python que permite importar, analisar e visualizar os dados de jogos de xadrez do Lichess. Através da API do Lichess, os dados são coletados, analisados e apresentados de forma clara e interativa, permitindo aos usuários explorar estatísticas e informações sobre suas partidas.
+
+## Funcionalidades
+
+- **Coleta de Dados**: Baixa jogos de xadrez de um usuário Lichess via API.
+- **Análise de Jogos**: Realiza análises de desempenho e gera estatísticas como vitórias, derrotas, empates e aberturas mais comuns.
+- **Visualizações Gráficas**: Exibe gráficos interativos usando `matplotlib` e `seaborn` para melhor entendimento dos dados coletados.
+- **Interface Gráfica**: Interface simples para executar os scripts de coleta, análise e visualização dos dados com `tkinter`.
+
+## Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seuusuario/LichessAnalyzer.git
+   cd LichessAnalyzer
+
+2. Crie e ative um ambiente virtual:
+
+python3 -m venv .venv
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
+
+3. Instale as dependências:
+
+pip install -r requirements.txt
+
+
+## Como Usar
+Configuração:
+
+1. Crie um arquivo .env com suas credenciais da API do Lichess:
+
+env
+USER=seu_usuario_lichess
+API_KEY=sua_chave_de_api
+
+2. Rodar o Programa:
+
+Para rodar o programa, basta executar o arquivo main.py:
+
+python main.py
+
+Isso abrirá a interface gráfica onde você poderá clicar nos botões para executar a coleta de dados, análise e visualização das estatísticas.
+
+## Scripts
+
+# fetch_games.py: Script para coletar os jogos do usuário na Lichess usando a API.
+# analyze_games.py: Script para analisar os dados coletados e calcular as principais estatísticas.
+# visualize.py: Script para gerar visualizações gráficas interativas a partir dos dados.
+# config.py: Contém configurações gerais, como a leitura das credenciais e parâmetros da API.
+
+## Dependências
+
+As dependências do projeto estão listadas no arquivo 
+
+requirements.txt. As principais bibliotecas incluem:
+
+# pandas - Para manipulação de dados.
+# matplotlib - Para gerar gráficos.
+# seaborn - Para visualizações avançadas.
+# requests - Para fazer as requisições HTTP à API do Lichess.
+# python-dotenv - Para carregar variáveis de ambiente de um arquivo .env.
+# tkinter - Para a interface gráfica.
+
+## Solução de Problemas
+
+Erro ao instalar o Tkinter:
+
+O Tkinter é uma biblioteca que faz parte do Python, mas você pode precisar instalá-la manualmente no Ubuntu:
+
+sudo apt-get install python3-tk
+
+# Erro de Permissão na API:
+
+Se você receber o erro "401 - Unauthorized", verifique se a chave da API (API_KEY) está correta no arquivo .env e se você tem as permissões necessárias para acessar os dados do Lichess.
+
+## Contribuindo
+
+Fork o repositório.
+Crie uma nova branch (git checkout -b feature/feature-name).
+Faça suas modificações e commit (git commit -am 'Adiciona nova funcionalidade').
+Envie para o repositório remoto (git push origin feature/feature-name).
+Abra um Pull Request.
+
+## Licença
+
+Este projeto é licenciado sob a MIT License.
